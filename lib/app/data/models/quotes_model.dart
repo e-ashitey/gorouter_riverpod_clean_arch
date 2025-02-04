@@ -6,10 +6,10 @@ part 'quotes_model.g.dart';
 @freezed
 class QuotesModel with _$QuotesModel {
   const factory QuotesModel({
-    required List<Quotes> quotes,
-    required int total,
-    required int skip,
-    required int limit,
+    @Default([]) List<Quotes> quotes,
+    @Default(0) int total,
+    @Default(0) int skip,
+    @Default(0) int limit,
   }) = _QuotesModel;
 
   factory QuotesModel.fromJson(Map<String, dynamic> json) =>
