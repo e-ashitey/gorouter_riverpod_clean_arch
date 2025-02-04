@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
 // SHADCN UI THEME
 ShadThemeData get shadLightTheme => ShadThemeData(
-      colorScheme: const ShadSlateColorScheme.light(),
       brightness: Brightness.light,
+      colorScheme: const ShadSlateColorScheme.light(),
+      textTheme:
+          ShadTextTheme.fromGoogleFont(GoogleFonts.notoSansCanadianAboriginal),
     );
 ShadThemeData get shadDarkTheme => ShadThemeData(
       brightness: Brightness.dark,
       colorScheme: const ShadSlateColorScheme.dark(),
+      textTheme:
+          ShadTextTheme.fromGoogleFont(GoogleFonts.notoSansCanadianAboriginal),
     );
 
 // MATERIAL THEME
