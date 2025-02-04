@@ -1,5 +1,5 @@
 class StorageConstants {
-  // static const String prefsAuthStatus = 'auth_status';
+  static const String prefsAuthUser = 'auth_user';
   static const String prefsUser = 'user';
   // static const String prefsAccessToken
 }
